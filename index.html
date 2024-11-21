@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Telefon Ro'yxati</title>
+
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">+998 00 000 00 00</h1>
+      <div>
+        <button class="btn" id="randomTelBtn">🎲</button>
+        <button class="btn" id="addTelBtn">+</button>
+        <button class="btn" id="viewListBtn">📋</button>
+        <button class="btn" id="darkModeToggle">🌙</button>
+      </div>
+    </main>
+
+    <div class="modal" id="addModal">
+      <h2>Yangi raqam qo'shish</h2>
+      <input type="text" id="newTel" placeholder="Telefon raqam kiriting" />
+      <button id="saveTel">Saqlash</button>
+      <button id="backBtn" class="hidden">Ortga</button>
+    </div>
+    
+
+    <div class="modal" id="listModal">
+      <h2>Telefonlar ro'yxati</h2>
+      <ul id="telList"></ul>
+      <button id="closeList">Yopish</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <audio class="audio" src=""></audio>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
